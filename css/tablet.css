@@ -1,0 +1,416 @@
+@media screen and (min-width: 768px) {
+ .tophead_line .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ /* .about_img img{
+ border-radius: 0 0 24px 24px;
+}  */
+}
+
+@media screen and (max-width: 767px) {
+ h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 24px 0;
+ }
+
+ h2 {
+  font-size: 1.5rem;
+ }
+
+ h3 {
+  font-size: 1.125rem;
+ }
+
+ .tophead_line .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  row-gap: 8px;
+ }
+
+ .tophead_item {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+ }
+
+ .tophead_item .about_contact_buttons a,
+ .tophead_item .modal-header-btn {
+  height: 28px;
+  margin-right: 10px;
+  padding: 0 20px;
+ }
+
+ .mob-menu-header-holder {
+  box-shadow: 0px 8px 24px rgb(59 69 75 / 4%);
+ }
+
+ .mobmenu-content li a {
+  padding: 10px !important;
+ }
+
+ .sub-menu > li,
+ .sub-menu-wrapper span + ul li {
+  padding-bottom: 0;
+ }
+
+ .mobmenu-content #mobmenuleft .sub-menu a {
+  font-size: 0.8rem;
+ }
+
+ .mobmenu-content #mobmenuleft .sub-menu .sub-menu a {
+  font-size: 0.8rem;
+  font-weight: 300;
+ }
+
+ .modal {
+  z-index: 10001;
+ }
+
+ .modal-content {
+  border-radius: 24px;
+ }
+
+ .modal-header {
+  padding: 24px 24px 0;
+ }
+
+ .modal-header .btn-close {
+  top: 14px;
+  right: 14px;
+ }
+
+ .modal-title {
+  font-size: 1.25rem;
+ }
+
+ .modal-body {
+  padding: 15px;
+ }
+
+ .home_blockslider_1 {
+  margin: 40px 0;
+ }
+
+ .home_block_slide1 {
+  padding-left: 0;
+ }
+
+ .home_block_slide1 b {
+  font-size: 1.625rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+ }
+
+ .home_block_slide1 .col.text-right img {
+  box-shadow: none;
+  border-radius: 12px;
+ }
+
+ .services_wrap {
+  border-radius: 0;
+  padding: 50px 0;
+ }
+
+ .block_head {
+  font-size: 1.5rem;
+ }
+
+ .about_wrap {
+  padding: 50px 0.75rem;
+ }
+
+ .about_row {
+  padding-top: 20px;
+ }
+
+ .about_wrap-container {
+  margin: 0;
+ }
+
+ .about_counters {
+  border-radius: 24px;
+  padding: 0 15px;
+  box-shadow: 0 38px 0 var(--second-color-accent);
+  margin-top: 40px;
+ }
+
+ .about_counters b {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  margin-top: 35px;
+ }
+
+ .about_txt_wrap {
+  margin: 0 0 50px;
+  padding: 0 0.75rem;
+ }
+
+ .about_contact_block,
+ .coop_contact_block {
+  margin: 30px 0;
+  border-radius: 24px;
+  padding: 30px 20px;
+ }
+
+ .about_txt_wrap .about_contact_buttons,
+ .coop_contact_block .about_contact_buttons {
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .about_txt_wrap .about_contact_buttons a,
+ .coop_contact_block .about_contact_buttons a {
+  margin-right: 0;
+ }
+
+ .contactform_contact {
+  padding: 32px;
+  border-radius: 24px 24px 0px 0px;
+ }
+
+ .contactform_contact p {
+  margin: 0;
+ }
+
+ .contactform_contact .w-100 {
+  display: none !important;
+ }
+
+ .contactform_contact .about_contact_buttons {
+  margin: 24px 0 32px;
+ }
+
+ .about_contact_buttons a {
+  margin-right: 10px;
+  padding: 0px 20px;
+ }
+
+ .about_contact_buttons a:last-child {
+  margin-right: 0;
+ }
+
+ .about_txt_wrap .about_contact_buttons a:first-child,
+ .coop_contact_block .about_contact_buttons a:first-child {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 12px;
+ }
+
+ .about_prefs_wrap {
+  margin: 0;
+  padding: 0 0.75rem;
+ }
+
+ .faq_row {
+  margin-bottom: 50px;
+ }
+
+ .faq_item {
+  max-width: none;
+  margin: 4px 0 16px;
+ }
+
+ .all_faq {
+  border-radius: 32px;
+  padding: 20px;
+  margin-top: 12px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+ }
+
+ .all_faq span {
+  bottom: 7px;
+  right: 7px;
+ }
+
+ .contactform_form {
+  padding-right: 0;
+ }
+
+ .contactform_form .form-horizontal {
+  margin-top: 20px;
+ }
+
+ .d-flex-form {
+  display: block;
+  margin: 0 0 32px;
+ }
+
+ .form-check {
+  padding: 0;
+  background: var(--background-light);
+ }
+
+ .button-send {
+  width: 100%;
+ }
+
+ .site-footer {
+  border-radius: 0;
+  padding: 32px 0 24px;
+ }
+
+ .footer-over + .site-footer {
+  margin-top: -24px;
+ }
+
+ .footer_logo {
+  width: 100%;
+  background-position: center;
+ }
+
+ .site-info {
+  font-size: 0.625rem;
+ }
+ .site-footer .menu {
+  padding-left: 0;
+ }
+
+ .site-footer .menu li {
+  padding-bottom: 14px;
+  font-size: 0.8rem;
+ }
+
+ .site-footer .about_contact_buttons {
+  justify-content: center;
+  margin: 0 0 14px;
+ }
+
+ .service_block {
+  height: 100px;
+  align-items: center;
+  display: flex;
+ }
+
+ .service_short {
+  padding: 0 0 24px;
+ }
+
+ .popform_wrap .tabs > label {
+  width: 49.2%;
+ }
+
+ .service_prefs {
+  margin: 31px 0;
+ }
+
+ /*.prefs_block {
+  text-align: center;
+ }*/
+
+ .prefs_block img {
+  max-width: 50%;
+ }
+
+ .service_pref p {
+  font-size: 0.8rem;
+ }
+
+ .service_vars_wrap .service_var_box {
+  padding: 20px 24px 140px 24px;
+  border-top-right-radius: 24px;
+ }
+
+ .service_vars_wrap input[type="radio"]:checked + .service_var_box {
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
+  padding-left: 39px;
+  padding-right: 39px;
+  width: calc(100% + 30px);
+ }
+
+ .service_vars_wrap .service_var_box .cas_name {
+  font-size: 2rem;
+  letter-spacing: 0;
+ }
+
+ .service_var_box .cas_text_2 table td {
+  display: block;
+  padding: 0 0 8px;
+  letter-spacing: 0;
+ }
+
+ .service_var_box .cas_text_1 ul li {
+  display: block;
+  margin-right: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+ }
+
+ .block_services_row {
+  margin-bottom: 24px;
+ }
+
+ /*.bs_1 {
+  border-radius: 0px 0px 0px 24px;
+  padding-bottom: 24px;
+ }
+
+ .bs_2 {
+  border-radius: 0px 0px 0px 24px;
+  padding: 60px 0 24px;
+  margin-top: -30px;
+ }*/
+
+ .tabs > div.tab_content {
+  padding: 10px;
+ }
+
+ .about_moreinfo_wrap {
+  padding: 32px 0;
+ }
+
+ .category_wrap {
+  border-radius: 0px 24px 0px 0px;
+  padding: 32px 24px 32px 0;
+ }
+
+ .category_wrap article {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+ }
+
+ .about_gallery_wrap {
+  padding: 24px 0;
+ }
+
+ .cooperation_wrap {
+  margin: 24px 0;
+ }
+
+ .cooperation_wrap .tabs > label {
+  margin-right: 20px;
+  white-space: nowrap;
+ }
+
+ .services_faq_bg {
+  padding: 50px 0;
+ }
+
+ .services_faq_bg:before {
+  border-radius: 0;
+  left: -12px;
+  width: 100vw;
+  transform: none;
+ }
+
+ .services_faq_wrap .tabs > label {
+  margin: 0 20px 0 0;
+ }
+
+ .cat_faq_subcat_grid {
+  margin: 36px 0;
+ }
+
+ /* .about_img img{
+ border-radius: 0 0 24px 24px;
+}  */
+}

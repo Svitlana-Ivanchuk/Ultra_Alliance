@@ -1,0 +1,32 @@
+/* PAGE INFORMATIONS */
+
+.information-item {
+ border-radius: 20px;
+ overflow: hidden;
+ border: none;
+ background-color: inherit;
+ margin-bottom: 1rem !important;
+}
+
+.service_block.small {
+ padding: 15px;
+ font-size: 90%;
+ height: 120%;
+}
+
+.subcategories-wrap {
+ margin-top: 15px;
+}
+
+.subcategory-block {
+ display: flex;
+}
+
+.subcategory-block .service_block {
+ width: 100%;
+}
+
+.subcategory-block .service_block_ttl {
+ font-size: 1rem;
+ font-weight: 500;
+}

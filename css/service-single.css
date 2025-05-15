@@ -1,0 +1,183 @@
+/*PAGE SINGLE SERVICES*/
+
+.service_short {
+ font-weight: 100;
+ letter-spacing: 0.7px;
+ padding: 80px 0;
+ max-width: 450px;
+ margin-left: auto;
+}
+
+.service_short_buttons {
+ margin-top: 40px;
+}
+
+.service_prefs {
+ margin: 100px 0;
+}
+
+.service_pref {
+ text-align: center;
+}
+
+.service_pref_img {
+ position: relative;
+ display: inline-block;
+ margin: 0 auto;
+}
+
+.service_pref_img:before {
+ content: "";
+ position: absolute;
+ width: 32px;
+ height: 32px;
+ left: -6px;
+ top: -6px;
+ background: var(--background-gradient);
+ border-radius: 16px;
+ z-index: -1;
+}
+
+.service_pref p {
+ font-size: 1.125rem;
+ line-height: 1.6;
+ text-align: center;
+ letter-spacing: 0.9px;
+ max-width: 215px;
+ margin: 20px auto;
+}
+
+.service_vars_wrap {
+ display: flex;
+ flex-direction: column;
+ margin: 145px 0 100px;
+}
+
+.service_vars_wrap input[type="radio"] {
+ display: none;
+}
+
+.service_vars_wrap .service_var_box {
+ width: 100%;
+ transition: all 250ms ease;
+ will-change: transition;
+ display: inline-block;
+ cursor: pointer;
+ position: relative;
+ padding: 40px 55px 140px 55px;
+ border-top-right-radius: 56px;
+ margin-top: -85px;
+}
+
+.var_box_1,
+.var_box_4 {
+ background: var(--background-gradient);
+}
+
+.var_box_2,
+.var_box_5 {
+ background: var(--second-color-accent);
+}
+
+.var_box_3,
+.var_box_6 {
+ background: var(--background-gradient-3);
+}
+
+.service_vars_wrap label:last-child .service_var_box {
+ padding-bottom: 55px;
+}
+
+.service_vars_wrap .service_var_box .cas_count {
+ font-weight: 400;
+ font-size: 2rem;
+ line-height: 1.4;
+ letter-spacing: 1px;
+}
+
+.service_vars_wrap .service_var_box .cas_name {
+ font-weight: 400;
+ font-size: 4rem;
+ line-height: 1.25;
+ letter-spacing: 1.8px;
+ margin-bottom: 16px;
+}
+
+.service_vars_wrap .service_var_box .cas_short {
+ font-weight: 100;
+ font-size: 1.125rem;
+ line-height: 1.55;
+ letter-spacing: 0.7px;
+}
+
+.service_var_box .cas_hidden {
+ display: none;
+}
+
+.service_var_box .cas_text_1 {
+ padding: 40px 0;
+ border-bottom: 0.5px solid var(--border);
+}
+
+.service_var_box .cas_text_1 ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ width: 100%;
+}
+
+.service_var_box .cas_text_1 ul li {
+ display: inline-block;
+ margin-right: 12px;
+ margin-bottom: 12px;
+ font-weight: 300;
+ font-size: 1.125rem;
+ line-height: 30px;
+ letter-spacing: 0.9px;
+ padding: 12px 20px 12px 52px;
+ border: 2px solid var(--color-dark);
+ filter: var(--filter);
+ border-radius: 14px;
+ background: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='10.25' stroke='black' stroke-width='1.5'/%3E%3Cpath d='M16 7.5L9.125 14.5L6 11.3182' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E")
+  no-repeat 16px center;
+}
+
+.service_var_box .cas_text_2 {
+ padding: 28px 0;
+ border-bottom: 0.5px solid var(--border);
+}
+
+.service_var_box .cas_text_2 table td {
+ padding: 12px 15px;
+ letter-spacing: 0.7px;
+}
+
+.service_var_box .cas_text_2 table td:first-child {
+ opacity: 0.5;
+ padding-left: 0;
+}
+
+span.info {
+ display: inline-block;
+ width: 20px;
+ height: 16px;
+ margin-left: 6px;
+ background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0003 18.3334C14.6027 18.3334 18.3337 14.6024 18.3337 10C18.3337 5.39765 14.6027 1.66669 10.0003 1.66669C5.39795 1.66669 1.66699 5.39765 1.66699 10C1.66699 14.6024 5.39795 18.3334 10.0003 18.3334Z' fill='black'/%3E%3Cpath d='M10 13.75L10 8.75' stroke='white' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M10 6.25H10.0067' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+  no-repeat center;
+}
+
+.service_vars_wrap input[type="radio"]:checked + .service_var_box {
+ margin-left: -85px;
+ margin-right: -85px;
+ padding-left: 140px;
+ padding-right: 140px;
+ width: calc(100% + 170px);
+}
+
+.service_vars_wrap input[type="radio"]:checked + .service_var_box .cas_hidden {
+ display: block;
+}
+
+.service_vars_wrap .service_var_box:active {
+ transform: translateY(10px);
+}

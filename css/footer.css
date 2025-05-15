@@ -1,0 +1,117 @@
+/*FOOTER*/
+
+.site-footer {
+ background: var(--background-dark);
+ color: var(--color-light);
+ border-radius: 56px 56px 0px 0px;
+ padding: 80px 0 70px;
+ z-index: 2;
+}
+
+.footer-over + .site-footer {
+ margin-top: -56px;
+}
+
+.footer_logo {
+ height: 60px;
+ width: 200px;
+ background: url(../img/logo_foot.png) no-repeat;
+}
+
+.site-footer a {
+ font-weight: 400;
+ letter-spacing: 0.7px;
+ color: var(--color-light);
+}
+
+.site-footer b {
+ display: block;
+ font-weight: 400;
+ letter-spacing: 0.4px;
+
+ color: var(--color-light);
+ margin-bottom: 16px;
+}
+
+.site-info {
+ font-weight: 300;
+ font-size: 0.8rem;
+ letter-spacing: 0.2px;
+ color: var(--color-light);
+ opacity: 0.5;
+}
+
+.site-info a {
+ float: right;
+ font-size: 0.75rem;
+}
+
+.footer_text {
+ font-weight: 300;
+ font-size: 0.8rem;
+ letter-spacing: 0.2px;
+ color: var(--color-light);
+ opacity: 0.5;
+ max-width: 350px;
+ margin: 40px 0;
+}
+
+.site-footer .menu {
+ list-style: none;
+ opacity: 0.5;
+}
+
+.site-footer .menu li {
+ padding-bottom: 16px;
+}
+
+.site-footer .about_contact_buttons {
+ margin: 30px 0 70px;
+}
+
+.site-footer .about_contact_buttons .w-100 {
+ display: none;
+}
+
+.site-footer .about_contact_buttons a span {
+ color: var(--color-dark);
+}
+
+.site-footer .about_contact_buttons a:hover {
+ background: var(--background-gradient);
+}
+
+.site-footer .about_contact_buttons a:hover svg {
+ filter: none;
+}
+
+.wpml-ls-legacy-dropdown a {
+ border: 1px solid var(--color-dark);
+ background-color: var(--background-dark);
+ font-weight: 400;
+ font-size: 0.75rem;
+ letter-spacing: 0.5px;
+ color: var(--color-light);
+}
+
+.wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,
+.wpml-ls-legacy-dropdown a:focus,
+.wpml-ls-legacy-dropdown a:hover {
+ color: var(--color-light);
+ background: var(--background-dark);
+ text-decoration: none;
+}
+
+.footer-list {
+ display: flex;
+ flex-wrap: wrap;
+ list-style: none;
+ opacity: 0.5;
+}
+
+.footer-item {
+ display: flex;
+ margin-bottom: 12px;
+ column-gap: 20px;
+}
+/* END footer  */

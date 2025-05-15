@@ -1,0 +1,267 @@
+/* Header Modal */
+/* Стилі для модального вікна */
+.backdrop {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ opacity: 1;
+ transform: scale(1);
+ visibility: visible;
+ transition: opacity 250ms var(--timing-function),
+  transform 250ms var(--timing-function),
+  visibility 250ms var(--timing-function);
+ z-index: 100;
+}
+.backdrop.is-hidden {
+ opacity: 0;
+ pointer-events: none;
+ transform: scale(1.1);
+ visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+ transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal-accessibility {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 101;
+ padding: 32px;
+ margin-top: 20px;
+ width: fit-content;
+ height: fit-content;
+ background: var(--background-gradient);
+ box-shadow: 24px 20px 40px var(--box-shadow);
+ border-radius: 3.5rem;
+ transition: transform 250ms var(--timing-function);
+}
+
+.accessibility-btn-open {
+ position: relative;
+ display: inline-flex;
+ align-items: center;
+ height: 40px;
+ font-weight: 400;
+ font-size: 14px;
+ padding: 0 24px;
+ background: var(--background-light);
+ border-radius: 28px;
+ text-decoration: none;
+ outline: none;
+ transition: width 0.3s ease-in-out;
+ color: var(--color-light);
+ font-family: inherit;
+}
+.accessibility-btn-open span {
+ line-height: 1;
+ font-weight: 400;
+ font-size: 14px;
+ padding: 0 24px;
+
+ border-radius: 28px;
+ margin-right: 16px;
+ text-decoration: none;
+ align-items: center;
+ letter-spacing: 0.8px;
+ color: var(--color-dark);
+ display: none;
+ padding-left: 12px;
+}
+
+.accessibility-btn-open:hover {
+ background: var(--background-gradient);
+}
+.accessibility-btn-open:hover svg {
+ filter: invert(1);
+}
+.accessibility-btn-open:hover span {
+ display: block;
+ background: var(--background-gradient);
+ opacity: 1;
+ visibility: visible;
+}
+
+.accessibility-btn-close {
+ width: 32px;
+ height: 32px;
+ border-radius: 16px;
+ background: var(--background-light) no-repeat center
+  url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 11M11 1L1 11' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E");
+ position: absolute;
+ top: 40px;
+ right: 40px;
+ padding: 0;
+}
+
+.accessibility-btn-close:is(:hover, :focus) {
+ filter: invert(1);
+}
+
+.modal-accessibility-title {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: 500;
+ font-size: 1em;
+ line-height: 1.5;
+ text-align: center;
+ letter-spacing: 0.02em;
+ margin-top: 2em;
+ margin-bottom: 1em;
+}
+
+.accessibility-settings-option {
+ display: flex;
+ align-items: center;
+ margin-bottom: 0.5em;
+}
+
+.accessibility-settings-title {
+ min-width: 10rem;
+}
+.accessibility-buttons {
+ display: flex;
+ gap: 2px;
+}
+
+.btn-access {
+ padding: 0 1em;
+ margin-left: 0;
+ line-height: 1;
+ border: none;
+ background: var(--background-light);
+ margin-right: 1rem;
+}
+
+.btn-reset-all {
+ display: block;
+ border: none;
+ background: transparent;
+ box-shadow: none;
+ margin: 0 auto;
+ font-size: 1em;
+}
+
+.btn-reset-all:hover {
+ color: var(--color-dark);
+ border: none;
+ background: transparent;
+ box-shadow: none;
+}
+
+html[data-font-size] p,
+html[data-font-size] span {
+ font-size: inherit !important;
+}
+
+html[data-color-theme="wb"] {
+ -webkit-filter: grayscale(1);
+ filter: grayscale(1);
+}
+
+html[data-color-theme="contrast"] {
+ filter: contrast(100%) saturate(200%);
+}
+
+/* Темна тема */
+html[data-color-theme="bw"] {
+ --background-light: #000000;
+ --background-dark: #ffffff;
+ --background-gradient: #ffffff;
+ --background-gradient-2: #cfc5c5;
+ --background-gradient-3: #898c8e0a;
+ --background-category: #000000;
+ --color-light: #000000;
+ --color-dark: #ffffff;
+ --color-accent: #ffffff;
+ --second-color-accent: #ffffff;
+ --bgc-light-them: #ffffff;
+ --bgc-dark-them: #161616;
+ --box-shadow: #898c8e0a;
+ --box-shadow-dark: 24px 20px 40px rgba(0, 0, 0, 0.08);
+ --border: #ffffff;
+ --filter: drop-shadow(24px 20px 40px rgba(0, 0, 0, 0.04));
+}
+
+html[data-color-theme="bw"] body,
+html[data-color-theme="bw"] a,
+html[data-color-theme="bw"] .btn,
+html[data-color-theme="bw"] .topbottom_line,
+html[data-color-theme="bw"] .about_wrap-container {
+ color: var(--color-dark);
+}
+
+html[data-color-theme="bw"] input:focus,
+html[data-color-theme="bw"] .btn:hover,
+html[data-color-theme="bw"] .tophead_item .about_contact_buttons a span,
+html[data-color-theme="bw"] .tophead_line a,
+html[data-color-theme="bw"] .accessibility-btn-open span,
+html[data-color-theme="bw"] .services_wrap,
+html[data-color-theme="bw"] .about_contact_block,
+html[data-color-theme="bw"] .contactform_contact,
+html[data-color-theme="bw"] .contactform_contact-text a,
+html[data-color-theme="bw"] .site-footer a,
+html[data-color-theme="bw"] .block_services_row,
+html[data-color-theme="bw"] .service_vars_wrap,
+html[data-color-theme="bw"] .modal-accessibility,
+html[data-color-theme="bw"] .btn-reset-all,
+html[data-color-theme="bw"] .modal-content {
+ color: var(--color-light);
+}
+
+html[data-color-theme="bw"] svg path,
+html[data-color-theme="bw"] .icon {
+ color: var(--color-dark);
+ fill: var(--color-light);
+ stroke: var(--color-dark);
+}
+
+html[data-color-theme="bw"] img,
+html[data-color-theme="bw"] input,
+html[data-color-theme="bw"] textarea {
+ filter: grayscale(1);
+ background: var(--background-dark);
+}
+
+html[data-color-theme="bw"] .wpcf7 form.sent .wpcf7-response-output {
+ border-color: var(--border);
+}
+
+html[data-color-theme="bw"] .site-footer .menu,
+html[data-color-theme="bw"] .footer_text,
+html[data-color-theme="bw"] .footer-list,
+html[data-color-theme="bw"] .site-info,
+html[data-color-theme="bw"] .block_subhead {
+ opacity: 1;
+}
+
+html[data-color-theme="bw"] .var_box_1,
+html[data-color-theme="bw"] .var_box_3,
+html[data-color-theme="bw"] .var_box_5 {
+ background: white;
+}
+
+html[data-color-theme="bw"] .var_box_2,
+html[data-color-theme="bw"] .var_box_4,
+html[data-color-theme="bw"] .var_box_6 {
+ background: grey;
+}
+
+html[data-color-theme="bw"] .accessibility-btn-close {
+ background: grey;
+}
+
+/* тема картинок*/
+html[data-img-theme="img-bw"] img {
+ -webkit-filter: grayscale(1);
+ filter: grayscale(1);
+}
+
+html[data-img-theme="no-img"] img {
+ display: none;
+}

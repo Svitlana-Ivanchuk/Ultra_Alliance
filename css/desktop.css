@@ -1,0 +1,8 @@
+@media (min-width: 1024px) {
+ .tophead_line .container {
+  flex-direction: row;
+ }
+ .about_img img {
+  border-radius: 0 0 56px 56px;
+ }
+}
