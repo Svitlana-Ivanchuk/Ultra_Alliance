@@ -9,6 +9,14 @@
 .block_services_wrap {
 }
 
+.block_services_main_img {
+ display: flex;
+}
+
+.block_services_main_img img {
+ margin-right: 20px;
+}
+
 .services_wrap {
  background: var(--background-gradient);
  border-radius: 56px 0px 0px 0px;
